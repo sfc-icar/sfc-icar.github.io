@@ -151,12 +151,12 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), #6daedb;
-  /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #6daedb, #173753);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #6daedb, #173753);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/bg-header.jpg');
   color: white;
 }
 header .header-content {
@@ -180,6 +180,15 @@ header .header-content .header-content-inner .list-badges {
 header .header-content .header-content-inner .list-badges img {
   height: 50px;
   margin-bottom: 25px;
+}
+header .panel {
+  color: #222222;
+}
+header .panel .panel-header {
+  background-color: #2892d7;
+}
+header .panel .panel-header h1 {
+  text-align: center;
 }
 header .device-container {
   max-width: 300px;
@@ -224,65 +233,36 @@ section {
 section h2 {
   font-size: 50px;
 }
-section.download {
-  padding: 150px 0;
-  position: relative;
-}
-section.download h2 {
-  margin-top: 0;
-  font-size: 50px;
-}
-section.download .badges .badge-link {
-  display: block;
-  margin-bottom: 25px;
-}
-section.download .badges .badge-link:last-child {
-  margin-bottom: 0;
-}
-section.download .badges .badge-link img {
-  height: 60px;
-}
-@media (min-width: 768px) {
-  section.download .badges .badge-link {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
-  }
-}
-section.features .section-heading {
+section.reserch .section-heading {
   margin-bottom: 100px;
 }
-section.features .section-heading h2 {
+section.reserch .section-heading h2 {
   margin-top: 0;
 }
-section.features .section-heading p {
+section.reserch .section-heading p {
   margin-bottom: 0;
 }
-section.features .device-container,
-section.features .feature-item {
+section.reserch .device-container,
+section.reserch .reserch-item {
   max-width: 300px;
   margin: 0 auto;
 }
-section.features .device-container {
+section.reserch .device-container {
   margin-bottom: 100px;
 }
 @media (min-width: 992px) {
-  section.features .device-container {
+  section.reserch .device-container {
     margin-bottom: 0;
   }
 }
-section.features .feature-item {
+section.reserch .reserch-item {
   text-align: center;
   margin-bottom: 100px;
 }
-section.features .feature-item h3 {
+section.reserch .reserch-item h3 {
   font-size: 30px;
 }
-section.features .feature-item i {
+section.reserch .reserch-item i {
   font-size: 80px;
   background: -webkit-linear-gradient(to left, #6daedb, #173753);
   background: linear-gradient(to left, #6daedb, #173753);
@@ -290,49 +270,105 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 992px) {
-  section.features .device-container,
-  section.features .feature-item {
+  section.reserch .device-container,
+  section.reserch .reserch-item {
     max-width: none;
   }
 }
-section.cta {
-  position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/bg-cta.jpg');
-  padding: 250px 0;
+section.member {
+  background-color: #eeeeee;
 }
-section.cta .cta-content {
-  position: relative;
-  z-index: 1;
+section.member .section-heading {
+  margin-bottom: 100px;
 }
-section.cta .cta-content h2 {
+section.member .section-heading h2 {
   margin-top: 0;
-  margin-bottom: 25px;
-  color: white;
-  max-width: 450px;
-  font-size: 50px;
 }
-@media (min-width: 768px) {
-  section.cta .cta-content h2 {
-    font-size: 80px;
+section.member .section-heading p {
+  margin-bottom: 0;
+}
+section.member .device-container,
+section.member .member-item {
+  max-width: 300px;
+  margin: 0 auto;
+}
+section.member .device-container {
+  margin-bottom: 100px;
+}
+@media (min-width: 992px) {
+  section.member .device-container {
+    margin-bottom: 0;
   }
 }
-section.cta .overlay {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
+section.member .member-item {
+  text-align: center;
+  margin-bottom: 100px;
+}
+section.member .member-item h3 {
+  font-size: 30px;
+}
+section.member .member-item i {
+  font-size: 80px;
+  background: -webkit-linear-gradient(to left, #6daedb, #173753);
+  background: linear-gradient(to left, #6daedb, #173753);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 992px) {
+  section.member .device-container,
+  section.member .member-item {
+    max-width: none;
+  }
+}
+ssection.link .section-heading {
+  margin-bottom: 100px;
+}
+ssection.link .section-heading h2 {
+  margin-top: 0;
+}
+ssection.link .section-heading p {
+  margin-bottom: 0;
+}
+ssection.link .device-container,
+ssection.link .link-item {
+  max-width: 300px;
+  margin: 0 auto;
+}
+ssection.link .device-container {
+  margin-bottom: 100px;
+}
+@media (min-width: 992px) {
+  ssection.link .device-container {
+    margin-bottom: 0;
+  }
+}
+ssection.link .link-item {
+  text-align: center;
+  margin-bottom: 100px;
+}
+ssection.link .link-item h3 {
+  font-size: 30px;
+}
+ssection.link .link-item i {
+  font-size: 80px;
+  background: -webkit-linear-gradient(to left, #6daedb, #173753);
+  background: linear-gradient(to left, #6daedb, #173753);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 992px) {
+  ssection.link .device-container,
+  ssection.link .link-item {
+    max-width: none;
+  }
 }
 section.contact {
+  padding: 50px;
+  color: white;
   text-align: center;
 }
 section.contact h2 {
+  color: white;
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -424,7 +460,7 @@ footer ul li a.active {
   border-radius: 300px;
 }
 .btn-xl {
-  padding: 15px 45px;
+  padding: 15px;
   font-size: 11px;
 }
 ::-moz-selection {

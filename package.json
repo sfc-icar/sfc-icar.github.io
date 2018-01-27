@@ -1,7 +1,7 @@
 {
     "name": "sfc-icar",
     "title": "sfc-icar",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "homepage": "http://icar.sfc.wide.ad.jp/",
     "author": "yas-nyan",
     "license": {
@@ -18,8 +18,7 @@
         "gulp-header": "^1.8.7",
         "gulp-less": "^3.1.0",
         "gulp-rename": "^1.2.2",
-        "gulp-uglify": "^1.5.4",
-        "jquery": "^1.11.3"
+        "gulp-uglify": "^1.5.4"
     },
     "repository": {
         "type": "git",

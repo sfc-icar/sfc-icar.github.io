@@ -484,3 +484,5 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+section.OB {background-color: #CBE6F3;}
